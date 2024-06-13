@@ -7,5 +7,5 @@ React.js frontend with Vite and Node.js backend with Express.
 2. Install dependencies
 3. Start Node server: `npm run start-server`
 4. Start Vite server: `npm run dev`
-5. Open http://localhost:3000
+5. Open http://localhost:5173/
 
