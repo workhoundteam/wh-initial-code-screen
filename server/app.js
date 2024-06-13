@@ -19,7 +19,6 @@ app.get('/items', (req, res) => {
 });
 
 app.post('/items', (req, res) => {
-    console.log(req.body);
     const newItem = req.body.items;
     if (newItem !== undefined) {
         items.push(newItem);
