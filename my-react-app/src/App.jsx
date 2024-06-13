@@ -49,7 +49,7 @@ function App() {
     });
     
     if (res.ok) {
-      await fetchAndSaveItems();
+      fetchAndSaveItems();
     } else {
       console.error('Failed to remove item');
     }
