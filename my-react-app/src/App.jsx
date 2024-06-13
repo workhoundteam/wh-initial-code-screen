@@ -16,7 +16,7 @@ function App() {
     });
 
     if (res.ok) {
-      const json = await res.json();
+      const json = res.json();
       setItems(json);
     } else {
       console.error('Error fetching and saving items');
@@ -33,7 +33,7 @@ function App() {
     });
 
     if (res.ok) {
-      setItems([...items, item]);
+      setItems([items, item]);
     } else {
       console.error('Failed to add item');
     }
@@ -90,7 +90,7 @@ function App() {
         {items.map((item, i) => {
           return (
             <li key={i} className='list-item'>
-              {item}
+              {items}
             </li>
           )
         })}
